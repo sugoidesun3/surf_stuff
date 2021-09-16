@@ -1,0 +1,19 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/zer0/.progs/surf-2.1'
+ 
+echo surf build options:
+ 
+echo "CC            = c99"
+ 
+echo "CFLAGS        = -fPIC `pkg-config --cflags x11` `pkg-config --cflags gtk+-3.0 gcr-3 webkit2gtk-4.0` -DVERSION=\"2.1\" -DGCR_API_SUBJECT_TO_CHANGE  -DLIBPREFIX=\"/usr/local/lib\" -DWEBEXTDIR=\"/usr/local/lib/surf\"  -D_DEFAULT_SOURCE -O1"
+ 
+echo "WEBEXTCFLAGS  = -fPIC `pkg-config --cflags webkit2gtk-4.0 webkit2gtk-web-extension-4.0 gio-2.0` -O1"
+ 
+echo "LDFLAGS       = "
+ 
+c99 -fPIC `pkg-config --cflags x11` `pkg-config --cflags gtk+-3.0 gcr-3 webkit2gtk-4.0` -DVERSION=\"2.1\" -DGCR_API_SUBJECT_TO_CHANGE  -DLIBPREFIX=\"/usr/local/lib\" -DWEBEXTDIR=\"/usr/local/lib/surf\"  -D_DEFAULT_SOURCE -O1 -c surf.c
+ 
+c99   -o surf surf.o `pkg-config --libs x11` `pkg-config --libs gtk+-3.0 gcr-3 webkit2gtk-4.0` -lgthread-2.0
+ 
+make: Leaving directory '/home/zer0/.progs/surf-2.1'
+ 
