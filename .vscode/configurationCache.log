@@ -1,1 +1,0 @@
-{"buildTargets":["all","clean","config.h","dist","distclean","install","options","surf","surf.o","uninstall","webext-surf.o","webext-surf.so"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[]},"fileIndex":[]}}

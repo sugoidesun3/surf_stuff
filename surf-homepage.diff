@@ -21,4 +21,4 @@ diff --git a/surf.c b/surf.c
 +#endif
  
  	setup();
- 	c = newclient(NULL);
+ 	c = newclient(NULL);git 
